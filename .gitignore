@@ -117,3 +117,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Svelte
+/public/build/
+
+.DS_Store
+
