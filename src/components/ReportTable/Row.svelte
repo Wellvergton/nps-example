@@ -26,3 +26,4 @@
   <LikeOrDeslikeCell isLike={data.payment} />
   <LikeOrDeslikeCell isLike={data.delivery} />
 </tr>
+

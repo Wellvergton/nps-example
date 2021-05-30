@@ -1,4 +1,5 @@
 <script>
+  import AcknowledgmentModal from "./AcknowledgmentModal.svelte";
   import Nps from "../Nps/Nps.svelte";
   import Field from "./Field.svelte";
   
@@ -29,6 +30,16 @@
       like: true,
     }
   ];
+  
+  let showAcknowledgmentModal = false;
+  
+  function showModal() {
+    showAcknowledgmentModal = true;
+  }
+  
+  function hideModal() {
+    showAcknowledgmentModal = false;
+  }
 </script>
 
 <form on:submit|preventDefault={() => {}}>
@@ -43,7 +54,7 @@
     <div class="field-body">
       <div class="field">
         <div class="control">
-          <button class="button is-primary">
+          <button class="button is-primary" on:click={showModal}>
             Enviar
           </button>
         </div>
@@ -51,4 +62,6 @@
     </div>
   </div>
 </form>
+
+<AcknowledgmentModal isActive={showAcknowledgmentModal} onDismiss={hideModal} />
 
