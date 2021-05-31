@@ -42,26 +42,28 @@
   }
 </script>
 
-<form on:submit|preventDefault={() => {}}>
-  <Nps />
+<div class="is-flex is-flex-direction-row is-justify-content-center">
+  <form on:submit|preventDefault={() => {}}>
+    <Nps />
 
-  {#each questions as question}
-    <Field data={question} />
-  {/each}
-  
-  <div class="field">
-    <div class="field-label"></div>
-    <div class="field-body">
-      <div class="field">
-        <div class="control">
-          <button class="button is-primary" on:click={showModal}>
-            Enviar
-          </button>
+    {#each questions as question}
+      <Field data={question} />
+    {/each}
+    
+    <div class="field">
+      <div class="field-label"></div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <button class="button is-primary" on:click={showModal}>
+              Enviar
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</form>
+  </form>
+</div>
 
 <AcknowledgmentModal isActive={showAcknowledgmentModal} onDismiss={hideModal} />
 
