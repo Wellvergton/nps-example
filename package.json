@@ -5,10 +5,10 @@
   "scripts": {
     "css-build": "node-sass --omit-source-map-url src/styles.scss public/global.css",
     "css-watch": "npm run css-build -- --watch",
-    "build": "npm run css-build & rollup -c",
+    "build": "npm run css-build && rollup -c",
     "dev": "npm run css-watch & rollup -c -w",
-    "start": "npm run css-build & sirv public --no-clear",
-    "deploy": "npm run build & firebase deploy"
+    "start": "npm run css-build && sirv public --no-clear",
+    "deploy": "npm run build && firebase deploy"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
