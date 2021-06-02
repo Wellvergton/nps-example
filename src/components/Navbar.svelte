@@ -21,14 +21,6 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item">
-      <img
-        src="https://fcxlabs.ferreiracosta.com/wp-content/uploads/2021/02/Logo-Labs.svg"
-        width="112"
-        height="28"
-      >
-    </a>
-
     <a
       role="button"
       class="navbar-burger"

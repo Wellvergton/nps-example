@@ -2,7 +2,7 @@
   import Form from "./components/Form/Form.svelte";
   import Navbar from "./components/Navbar.svelte";
   import Nps from "./components/Nps/Nps.svelte";
-  import ReportTable from "./components/ReportTable/ReportTable.svelte";
+  import Report from "./components/Report/Report.svelte";
   
   let selectedScreen = "nps";
   
@@ -18,7 +18,7 @@
   {/if}
   
   {#if selectedScreen === "report"}
-    <ReportTable />
+    <Report />
   {/if}
 </main>
 
