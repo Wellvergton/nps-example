@@ -17,7 +17,7 @@
 
 
 <tr class={setColorByGrade(data.npsGrade)}>
-  <td>{data.client}</td>
+  <td>{data.id}</td>
   <td>{data.npsGrade}</td>
   <ClassificationCell npsGrade={data.npsGrade} />
   <LikeOrDeslikeCell isLike={data.shippingValue} />
