@@ -1,15 +1,15 @@
 <script>
-  import { onMount } from "svelte";
-  import dummyClients from "../../dummyClients.js";
+  import { beforeUpdate } from "svelte";
   
+  export let assessments;
   let average;
   
-  onMount(() => {
+  beforeUpdate(() => {
     let total = 0;
     
-    dummyClients.forEach((client) => total += client.npsGrade);
+    assessments.forEach((assessment) => total += assessment.npsGrade);
     
-    average = (total / dummyClients.length).toFixed(2);
+    average = assessments.length ? (total / assessments.length).toFixed(2) : "";
   });
 </script>
 
