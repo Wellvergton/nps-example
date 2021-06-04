@@ -20,10 +20,10 @@
   <td>{data.id}</td>
   <td>{data.npsGrade}</td>
   <ClassificationCell npsGrade={data.npsGrade} />
-  <LikeOrDeslikeCell isLike={data.shippingValue} />
-  <LikeOrDeslikeCell isLike={data.price} />
-  <LikeOrDeslikeCell isLike={data.navigation} />
-  <LikeOrDeslikeCell isLike={data.payment} />
-  <LikeOrDeslikeCell isLike={data.delivery} />
+  <LikeOrDeslikeCell isLike={data.likedShippingValue} />
+  <LikeOrDeslikeCell isLike={data.likedPrice} />
+  <LikeOrDeslikeCell isLike={data.likedNavigation} />
+  <LikeOrDeslikeCell isLike={data.likedPayment} />
+  <LikeOrDeslikeCell isLike={data.likedDelivery} />
 </tr>
 
