@@ -65,5 +65,5 @@
   </form>
 </div>
 
-<AcknowledgmentModal isActive={showAcknowledgmentModal} onDismiss={hideModal} />
+<AcknowledgmentModal isActive={showAcknowledgmentModal} />
 
